@@ -58,7 +58,7 @@ export default function Contact() {
             </svg>
           </div>
           <div className="hero-content text-center animate-up">
-            <h1 className="hero-title">CONNECT WITH <span className="highlight">US</span></h1>
+            <h1 className="hero-title">Connect with <span className="highlight">Us</span></h1>
             <p className="hero-subtitle">We’re here to guide your journey towards balance, growth, and inner peace.</p>
           </div>
         </section>
@@ -283,6 +283,11 @@ export default function Contact() {
           animation: spin-slow 120s linear infinite;
         }
         .lotus-svg path { fill: var(--primary); opacity: 0.05; }
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
         .hero-title {
           font-family: var(--font-heading);
           font-size: 3.5rem;

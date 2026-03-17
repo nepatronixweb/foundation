@@ -5,6 +5,9 @@ import WhatsAppFloat from '../components/WhatsAppFloat';
 export const metadata = {
   title: 'Pathik Foundation — A Living BuddhaField',
   description: 'A spiritual/wellness NGO based in Nepal focused on holistic living and transformation.',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({ children }) {

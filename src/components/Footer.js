@@ -18,8 +18,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="footer-brand">
             <Link href="/" className="footer-logo">
-              <i className="fas fa-spa logo-icon"></i>
-              <span className="brand-text">PATHIK<span className="scent">Foundation</span></span>
+              <img src="/logo.png" alt="Pathik Foundation Logo" className="logo-img" />
             </Link>
             <p className="footer-mission">
               A Living BuddhaField dedicated to holistic transformation through meditation, 
@@ -118,24 +117,12 @@ export default function Footer() {
           color: white;
           text-decoration: none;
         }
-        .logo-icon {
-          font-size: 2rem;
-          color: var(--secondary);
+        .logo-img {
+          height: 60px;
+          margin-bottom: 5px;
+          object-fit: contain;
         }
-        .brand-text {
-          font-family: var(--font-heading);
-          font-size: 1.5rem;
-          font-weight: 700;
-          line-height: 1;
-        }
-        .scent {
-          display: block;
-          font-size: 0.8rem;
-          font-weight: 400;
-          letter-spacing: 2px;
-          color: var(--primary);
-          text-transform: uppercase;
-        }
+
         .footer-mission {
           line-height: 1.6;
           margin-bottom: 30px;

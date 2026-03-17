@@ -23,6 +23,8 @@
   --shadow-glow: 0 0 20px rgba(244, 123, 32, 0.3);
 }
 
+.text-center { text-align: center; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -69,14 +71,6 @@ img {
   padding: 100px 0;
   position: relative;
   overflow: hidden;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-white {
-  color: white;
 }
 
 /* Glassmorphism */

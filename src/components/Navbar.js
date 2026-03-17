@@ -20,11 +20,7 @@ export default function Navbar() {
         {/* Logo Area */}
         <Link href="/" className="logo">
           <div className="logo-icon-wrapper">
-             <i className="fas fa-spa logo-icon"></i>
-          </div>
-          <div className="logo-text">
-            <span className="brand-name">PATHIK</span>
-            <span className="brand-suffix">Foundation</span>
+             <img src="/logo.png" alt="Pathik Foundation Logo" className="logo-img" />
           </div>
         </Link>
         
@@ -99,34 +95,10 @@ export default function Navbar() {
           gap: 12px;
           text-decoration: none;
         }
-        .logo-icon {
-          font-size: 2rem;
-          background: -webkit-linear-gradient(45deg, var(--primary), #ff9e5e);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          filter: drop-shadow(0 0 10px rgba(244,123,32,0.2));
-        }
-
-        .logo-text {
-          display: flex;
-          flex-direction: column;
-          line-height: 1;
-        }
-
-        .brand-name {
-          font-family: var(--font-heading);
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: var(--dark);
-          letter-spacing: 1px;
-        }
-        
-        .brand-suffix {
-          font-size: 0.7rem;
-          color: var(--secondary);
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          font-weight: 600;
+        .logo-img {
+          height: 50px;
+          object-fit: contain;
+          filter: drop-shadow(0 0 5px rgba(244,123,32,0.2));
         }
 
         /* Navigation */
@@ -162,12 +134,12 @@ export default function Navbar() {
         /* CTA Button */
         .cta-button {
           padding: 12px 28px;
-          background: var(--gradient-saffron);
+          background: linear-gradient(135deg, var(--secondary) 0%, #4caf50 100%);
           color: white;
           border-radius: 50px;
           font-weight: 700;
           font-size: 0.9rem;
-          box-shadow: 0 4px 15px rgba(244,123,32,0.3);
+          box-shadow: 0 4px 15px rgba(58,138,62,0.4);
           transition: all 0.3s ease;
           display: none;
         }
@@ -178,7 +150,7 @@ export default function Navbar() {
 
         .cta-button:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 25px rgba(244,123,32,0.5);
+          box-shadow: 0 8px 25px rgba(58,138,62,0.6);
         }
 
         /* Mobile Toggle */

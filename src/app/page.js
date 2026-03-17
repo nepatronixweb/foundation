@@ -228,6 +228,7 @@ export default function Home() {
           background: var(--gradient-hero);
           display: flex;
           align-items: center;
+          justify-content: center;
           position: relative;
           color: white;
           overflow: hidden;
@@ -254,6 +255,7 @@ export default function Home() {
           position: relative;
           z-index: 10;
           max-width: 800px;
+          text-align: center;
         }
 
         .hero-title {
@@ -274,13 +276,14 @@ export default function Home() {
         .hero-subtitle {
           font-size: 1.3rem;
           opacity: 0.9;
-          margin-bottom: 40px;
+          margin: 0 auto 40px;
           max-width: 600px;
           font-weight: 300;
         }
 
         .hero-actions {
           display: flex;
+          justify-content: center;
           gap: 20px;
         }
         
